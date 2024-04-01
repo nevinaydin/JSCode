@@ -1,25 +1,50 @@
-console.log("hello javascript learners");
-//single comment line
-/** 
- * 
- * Multiple comment line
-*/
-//declaring variables
+// Single comment line
 /**
- * 
- * JS is dynamic typing language
+ * Multi Line Comment line
+ */
+
+// Declare a variable
+let message;
+// Assign a value
+message = 'Hello Coders';
+
+console.log(message);
+
+// re-assign a new value
+message = 'My first JS Code';
+
+console.log(message);
+
+// create 2 variables at the same line
+let admin, userName;
+userName = 'Ideen';
+admin = userName;
+console.log(admin);
+
+/**
+ * JS is dynamicly typing language
  */
 
 let a;
+console.log(typeof a); // undefined
+a = 5; // JS infers that a is a number
+console.log(typeof a); // number
+
+a = 'Cydeo';
+console.log(typeof a); // string
+
+a = true;
+console.log(typeof a); // boolean
+
+a = null;
 console.log(typeof a);
-a=5;
-console.log(typeof a);
-a='Bootcamp';
-console.log(typeof a);
-let x=5, y='Nevin';
-console.log(x+y);//concatination
-console.log(x*y);//NaN
-//Naming Rules:Same with JAVA naming rules
-a=true;//boolean
-console.log(typeof a);
+
+let x = 5, y = 'Cydeo';
+console.log(x + y);
+console.log(x * y); //NaN
+
+const b = 45;
+// can I re-assign a new value to const
+b = 30; // TypeError: Assignment to constant variable.
+console.log(b);
 
